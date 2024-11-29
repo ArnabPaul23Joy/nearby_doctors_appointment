@@ -1,0 +1,31 @@
+	<html>
+		<head>
+			<title>Log In Page</title>
+
+			<link rel="stylesheet" type="text/css" href="login.css">
+
+		</head>
+		<body id="bd">
+			<div id="login_form_div">
+					<input type="text" id="email" placeholder="email"></input>
+					<input type="password" id="password" placeholder="password"></input>
+					<button id="Butt2" type="submit" onclick="login()" >Log In</button>
+			</div>
+
+			<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyCC_yiUneL1FCIZSSVxL2qU9Pu2U3ML6Wg",
+			    authDomain: "doctor-s-appointment-29b2d.firebaseapp.com",
+			    databaseURL: "https://doctor-s-appointment-29b2d.firebaseio.com",
+			    projectId: "doctor-s-appointment-29b2d",
+			    storageBucket: "doctor-s-appointment-29b2d.appspot.com",
+			    messagingSenderId: "838842409540"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+			
+			<script type="text/javascript" src="login.js"></script>
+		</body>
+	</html>

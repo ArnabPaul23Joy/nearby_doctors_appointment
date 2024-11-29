@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="home.css">
+
+</head>
+<body onload="protype()">
+	<div id="topnav">
+		<img id="logo" src="logo.png">
+		<ul class="navBarList"> 
+			<li><button class="myBtn" id="search" onclick="func1()">Search</button></li>
+			<li><button class="myBtn" id="optype" onclick="func2()">Get Appointment</button></li>
+			<li><button class="myBtn" id="notification" onclick="func3()">Notification</button></li>
+			<li><button class="myBtn" id="messages" onclick="func4()">Messages</button></li>
+			<li><button class="myBtn" id="profile" onclick="func5()">Profile</button></li>
+		</ul>
+	</div>
+	<div id="docpost">
+		<input type="text" id="doctext" placeholder="Type Your Post"></input>
+		<button class="myBtnDocPost" id="postbutton" onclick="func6()">Post</button>
+	</div>
+
+<!-- 
+	<div class="pfeed" id="profeed">
+		<button class="probutt" id="pname" onclick="func7()">Arnab paul</button>
+		<p class="dt" id="dtype">Cardiologist</p>
+		<p class="deg" id="degrees">degrees</p>
+		<p class="pos" id="posts">posts</p>
+	</div> -->
+
+	<section class = "myPost" id = "HereWeGo" style="visibility: hidden">
+		<div class="myAuthorRecog"> 
+			<div class="myAuthor">
+				<i class="fas fa-user"></i>
+				<span id = "myPostUserName"> MD Sakib Khan </span>	
+			</div>
+			<div class="myRecog">
+				<i class="fas fa-award"></i>
+				<span id = "myRecogSpan"> Cardiologist </span>
+			</div>
+		</div>
+		<div class="myDetails row">
+			<p id = "myPostDetails">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Je  Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Je  Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Je </p>
+		</div>
+	</section>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyCC_yiUneL1FCIZSSVxL2qU9Pu2U3ML6Wg",
+			    authDomain: "doctor-s-appointment-29b2d.firebaseapp.com",
+			    databaseURL: "https://doctor-s-appointment-29b2d.firebaseio.com",
+			    projectId: "doctor-s-appointment-29b2d",
+			    storageBucket: "doctor-s-appointment-29b2d.appspot.com",
+			    messagingSenderId: "838842409540"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+	</script>
+	
+	<script  type="text/javascript" src="lookprofile.js">
+				
+		//function func7(){
+		//	window.location("lookprofile.html");
+		//}
+	</script>
+
+	<script type="text/javascript" src="home.js"></script>
+
+</body>
+</html>

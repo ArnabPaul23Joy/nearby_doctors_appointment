@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adtional info</title>
+	<link rel="stylesheet" type="text/css" href="doctorsform.css">
+</head>
+<body id="bd">
+	
+
+		<p id="p1">Please provide us with the additional informations below:</p>
+		<p id="type">What type of docotor are you?</p>
+	<div id="type1">
+		<input id="anesthesiologist" type="radio" onclick="types1()">anesthesiologist</input>
+		<input id="cardiologist" type="radio" onclick="types2()">cardiologist</input>
+		<input id="dentist" type="radio" onclick="types3()">dentist</input>
+	</div>
+	<div id="type2">
+		<input id="ent_specialist" type="radio" onclick="types4()">ent specialist</input>
+		<input id="dermatologist" type="radio" onclick="types5()">dermatologist</input>
+		<input id="endocrinologist" type="radio" onclick="types6()">endocrinologist</input>
+	</div>
+	<div id="type3">
+		<input id="gynocologist" type="radio" onclick="types7()">gynocologist</input>
+		<input id="immunologist" type="radio" onclick="types8()">immunologist</input>
+		<input id="medicine_specialist" type="radio" onclick="types9()">medicine specialist</input>
+	</div>
+	<div id="type4">
+		<input id="neurologist" type="radio" onclick="types10()">neurologist</input>
+		<input id="urologist" type="radio" onclick="types11()">urologist</input>
+		<input id="surgeon" type="radio" onclick="types12()">surgeon</input>
+	</div>
+	<div id="type5">
+		<input id="oncologist" type="radio" onclick="types13()">oncologist</input>
+		<input id="pediatrician" type="radio" onclick="types14()">pediatrician</input>
+		<input id="psychologist" type="radio" onclick="types15()">psychologist</input>
+	</div>
+		<input id="degrees" type="text" placeholder="Your Degres"></input>
+		<input id="visit" type="text" placeholder="your visit .tk"></input>
+		<button id="submit" onclick="submit()">submit</button>
+
+					
+
+			<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyCC_yiUneL1FCIZSSVxL2qU9Pu2U3ML6Wg",
+			    authDomain: "doctor-s-appointment-29b2d.firebaseapp.com",
+			    databaseURL: "https://doctor-s-appointment-29b2d.firebaseio.com",
+			    projectId: "doctor-s-appointment-29b2d",
+			    storageBucket: "doctor-s-appointment-29b2d.appspot.com",
+			    messagingSenderId: "838842409540"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+			
+			<script type="text/javascript" src="doctorsform.js"></script>
+	
+</body>
+</html>

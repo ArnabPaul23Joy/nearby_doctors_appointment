@@ -1,0 +1,43 @@
+	<html>
+		<head>
+			<title>Sign In Page</title>
+
+			<link rel="stylesheet" type="text/css" href="signup.css">
+		</head>
+		<body id="bd">
+			<p id="tt">Please, select the account type from below:</p>
+			<div id="radiobuttons">
+				<input id="Doc" type="radio" onclick="SelectD()" value="D">Doctor
+				<input id="Pat" type="radio" onclick="SelectP()" value="P">Patient
+			</div>
+			
+			<div id="SignIn_form_div">
+
+					<input type="text" id="Username" placeholder="username"></input>
+					<input type="text" id="Email" placeholder="email"></input>
+					<input type="password" id="Password" placeholder="password"></input>
+
+					
+					<button id="Butt1"  type="submit" onclick="CreateAccount()" >Sign Up</button>
+			</div>
+
+					
+
+			<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyCC_yiUneL1FCIZSSVxL2qU9Pu2U3ML6Wg",
+			    authDomain: "doctor-s-appointment-29b2d.firebaseapp.com",
+			    databaseURL: "https://doctor-s-appointment-29b2d.firebaseio.com",
+			    projectId: "doctor-s-appointment-29b2d",
+			    storageBucket: "doctor-s-appointment-29b2d.appspot.com",
+			    messagingSenderId: "838842409540"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+			
+			<script type="text/javascript" src="signup.js"></script>
+			<!-- <script type="text/javascript" src="doctorsform.js"></script> -->
+		</body>
+	</html>
